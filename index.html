@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <div class="min-h-screen flex">
-            <div class="flex-1 bg-slate-500"></div>
-
-            
-            <div class="flex-1 bg-[url(bg18.jpg)] bg-cover bg-no-repeat"></div>
-          </div>
+    <body class ="flex">
+        <div class="w-full md:w-1/2 min-h-screen bg-slate-200">
+            <div class="mt-56 mx-auto w-96 h-96">
+                <div>
+                    <a class="flex justify-center" href="index.html"><img src="https://app.counseal.com/uploads/domain/39692/logo/200x60-dark_0d06cb13f7bc58f91c4b74ff0e6e852d.svg" alt="logo" width="600" height="600"></a>
+                </div>
+                <form>
+                    <div class="mb-6 flex-1 bg-slate-500 ">
+                        <label for="email" class="mb-2 text-sm font-medium text-black"></label>
+                        <input type="email" id="email" class="border-grey-300 text-black
+                            text-sm rounded-t-lg block w-full p-2.5 bg-white-200 
+                            border-slate-500 placeholder-black-100 text-black
+                            border-slate-500" placeholder="Email" required>
+                    </div>
+                    <div class="mb-6 flex-1 bg-slate-500">
+                        <label for="password" class="mb-2 text-sm font-medium text-black"></label>
+                        <input type="password" id="password" class="border-slate-500 text-black
+                        text-sm rounded-bl-lg block w-full p-2.5 bg-white-200 
+                        border-slate-500 placeholder-black-100 text-black
+                        border-slate-500" placeholder="Password" required>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-left h-5">
+                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 border-gray-600" required>
+                            <label for="remember" class="ml-2 text-base text-gray">Remember me</label>
+                    </div>
+                    <div class="flex items-right h-10">
+                            <button type="Login" class="text-grey-500 bg-blue-500 hover:bg-blue-800 py-2 px-4 w-auto text-center rounded-br-lg">Submit</button>
+                    </div>
+                    </div>
+                    <p class="indent-8 text-xs mt-15 h-10"><a href="https://app.counseal.com/site/havingTrouble"> (Having Trouble?) </a></p>
+                </form>
+            </div>
+            <div class="flex justify-center">
+                <button class="bg-blue-500 text-grey-500 font-base py-2 px-6">
+                Install this app
+                </button>
+            </div>
+        </div>
+        <div class="w-0 md:w-1/2 flex-1 bg-[url(bg18.jpg)] bg-cover bg-no-repeat">
+        </div>
     </body>
-<footer></footer>
+</html>
